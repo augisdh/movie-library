@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie library</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loading"></div>
+    
+    <main class="main-wrapper">
+        <div class="main-content">
+            <div class="heading">
+                <h1 class="header-name">Movies</h1>
+            </div>
+            <div class="nav-btns">
+                <button class="btn-hero" data-hero="batman" type="button">Batman</button>
+                <button class="btn-hero" data-hero="superman" type="button">Superman</button>
+                <button class="btn-hero" data-hero="iron+man" type="button">Iron man</button>
+            </div>
+            <div class="movie-list">
+                <div class="list-heading">
+                    <h3>Movies list</h3>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="list-title">
+                                    Title
+                                    <button class="btn-sort" data-sort="title-up" type="button">&#8657;</button>
+                                    <button class="btn-sort" data-sort="title-down" type="button">&#8659;</button>
+                                </th>
+                                <th class="list-year">
+                                    Years
+                                    <button class="btn-sort" data-sort="date-up" type="button">&#8657;</button>
+                                    <button class="btn-sort" data-sort="date-down" type="button">&#8659;</button>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="list-info"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
